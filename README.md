@@ -269,7 +269,7 @@ docker compose up -d # Starts services in detached mode (in the background)
 
 #### Website
 
-You should see the "Wordpress installation" page in your browser. If not, please check if your CloudCLIPHP installation satisfies requirements.
+You should see the "CloudCLI installation" page in your browser. If not, please check if your CloudCLI installation satisfies requirements.
 
 ```
 https://DOMAIN_NAME
