@@ -123,7 +123,6 @@ services:
             OLLAMA_CONTEXT_LENGTH: 64000
             OLLAMA_HOST: '0.0.0.0'
             TZ: '${LOCAL_TIMEZONE}'
-        entrypoint: bash -c "/tmp/pull-models.sh"
         #deploy:
         #    resources:
         #        reservations:
