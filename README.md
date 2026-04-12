@@ -74,7 +74,7 @@ Create rules to open ports to the internet, or to a specific IPv4 address or ran
 	- [Configuration](#configuration)
 	- [Installation](#installation)
 - [Usage](#usage)
-	- [CloudCLI UI](#cloudcli-ui)
+	- [Website](#website)
 	- [Claude Code](#claude-code)
 	- [Ollama](#ollama)
 	- [Proxy](#proxy)
@@ -268,7 +268,7 @@ docker compose up -d # Starts services in detached mode (in the background)
 
 [https://docs.docker.com/reference/cli/docker/compose/](https://docs.docker.com/reference/cli/docker/compose/)
 
-#### CloudCLI UI
+#### Website
 
 You should see the "CloudCLI UI installation" page in your browser. If not, please check if your CloudCLI UI installation satisfies requirements.
 
