@@ -267,6 +267,16 @@ docker compose up -d # Starts services in detached mode (in the background)
 
 [https://docs.docker.com/reference/cli/docker/compose/](https://docs.docker.com/reference/cli/docker/compose/)
 
+#### Website
+
+You should see the "Wordpress installation" page in your browser. If not, please check if your CloudCLIPHP installation satisfies requirements.
+
+```
+https://DOMAIN_NAME
+```
+
+[open source overview and settings](https://cloudcli.ai/docs/open-source-self-hosting/open-source-overview)
+
 #### Claude Code
 
 Run Claude Code with environment variables inline:
