@@ -162,7 +162,7 @@ Edit the `.env` file to change values of
   </tr>
   <tr>
     <td>other</td>
-    <td>[Get API Key](https://platform.claude.com/login?returnTo=%2Fsettings%2Fkeys)</td>
+    <td><a href="https://platform.claude.com/login?returnTo=%2Fsettings%2Fkeys" rel="nofollow">Get API Key</td>
   </tr>
 </tbody>
 </table>
