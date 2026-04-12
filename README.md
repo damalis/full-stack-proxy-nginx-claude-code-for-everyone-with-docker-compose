@@ -2,10 +2,10 @@
 
 If You want to install Claude Code at short time;
 
-<mark>"Use free on web Claude Code with Ollama and CloudCLI UI"</mark>
+<mark>"Use free on web Claude Code with Ollama and CloudCLI UI"</mark>\
 <mark>"free on mobile and web with CloudCLI (aka Claude Code UI)"</mark>
 
-#### Full stack Proxy Nginx claude code:
+#### Full stack Proxy Nginx Claude Code:
 <p align="left">
 <a href="https://claude.com/product/claude-code" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/81847?v=4" alt="claude code" height="40" width="40"/> </a>&nbsp;&nbsp;&nbsp; 
 <a href="https://ollama.com/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/151674099?s=200&v=4" alt="ollama" height="40" width="40"/> </a>&nbsp;&nbsp;&nbsp; 
@@ -34,7 +34,7 @@ Plus, manage docker containers with Portainer.
 <a href="https://www.raspberrypi.com/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/1294177?s=200&v=4" alt="ubuntu" height="40" width="40"/> </a>&nbsp;&nbsp;&nbsp; 
 <a href="https://www.redhat.com/en/technologies/linux-platforms/enterprise-linux" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/33972111?s=200&v=4" alt="redhat on s390x (IBM Z)" height="40" width="40"/> </a>&nbsp;&nbsp;&nbsp; 
 <a href="https://www.suse.com/products/server/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/623819?s=200&v=4" alt="opensuse on s390x (IBM Z)" height="40" width="40"/> </a>&nbsp;&nbsp;&nbsp; 
-<a href="https://archlinux.org/" target="_blank" rel="noreferrer"> <img src="https://gitlab.archlinux.org/uploads/-/system/group/avatar/23/iconfinder_archlinux_386451.png?width=48" alt="arch linux" height="40" width="40"/> </a>
+<a href="https://archlinux.org/" target="_blank" rel="noreferrer"> <img src="https://avatars.githubusercontent.com/u/4673648?s=200&v=4" alt="arch linux" height="40" width="40"/> </a>
 </p>
 
 ##### Note: Fedora 37, 39 and alpine linux x86-64 compatible, could not try sles IBM Z s390x, rhel IBM Z s390x and raspberrypi.
@@ -91,7 +91,7 @@ git clone https://github.com/damalis/full-stack-proxy-nginx-claude-code-for-ever
 Open a terminal and `cd` to the folder in which `docker-compose.yml` is saved and run:
 
 ```
-cd full-stack-proxy-nginx-claude code-for-everyone-with-docker-compose
+cd full-stack-proxy-nginx-claude-code-for-everyone-with-docker-compose
 chmod +x install.sh
 LC_ALL=C.UTF-8 ./install.sh # LC_ALL=C.UTF-8 if not os language english
 ```
@@ -130,8 +130,7 @@ cp env.example .env
 
 Edit the `.env` file to change values of
 
-|```LOCAL_TIMEZONE```|```DOMAIN_NAME```|```DIRECTORY_PATH```|```LETSENCRYPT_EMAIL```|
-|```SSL_SNIPPET```|```ANTHROPIC_API_KEY```|
+|```LOCAL_TIMEZONE```|```DOMAIN_NAME```|```DIRECTORY_PATH```|```LETSENCRYPT_EMAIL```|```SSL_SNIPPET```|```ANTHROPIC_API_KEY```|
 
 <table><thead>
   <tr>
