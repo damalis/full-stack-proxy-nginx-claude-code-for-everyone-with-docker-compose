@@ -1,0 +1,57 @@
+upstream docker_claude_code  {
+        server  claude:5173;
+}
+
+map $scheme $proxy_x_forwarded_ssl {
+	default off;
+	https on;
+}
+
+map $http_upgrade $connection_upgrade {
+	default	Upgrade;
+	''	close;
+}
+
+server {
+	listen ${NGINX_PORT} default_server;
+	listen [::]:${NGINX_PORT} ipv6only=on default_server;
+	#
+	server_name ${NGINX_HOST} www.${NGINX_HOST};
+	#
+	location ~ ^/.well-known/acme-challenge/ {
+		root /tmp/acme-challenge;
+	}
+	#
+	#location / {
+		#port_in_redirect off;
+		#return 301 https://$host$request_uri;
+	#}
+}
+
+server {
+	#listen 443 ssl;
+	#
+	#server_name claude.${NGINX_HOST};
+	#
+	#ssl_certificate /etc/letsencrypt/live/${NGINX_HOST}/fullchain.pem;
+	#ssl_certificate_key /etc/letsencrypt/live/${NGINX_HOST}/privkey.pem;
+	#ssl_trusted_certificate /etc/letsencrypt/live/${NGINX_HOST}/chain.pem;
+	#ssl_dhparam /etc/letsencrypt/ssl-dhparam.pem;
+	include /etc/letsencrypt/options-ssl-nginx-proxy.conf;
+
+	location / {            
+		proxy_pass	http://docker_claude_code;
+		proxy_set_header	X-Real-IP	$remote_addr;
+		proxy_set_header	X-Forwarded-For	$proxy_add_x_forwarded_for;
+		proxy_set_header	X-Forwarded-Proto	$scheme;
+		proxy_set_header	Host	$host;
+		proxy_set_header	X-Forwarded-Host	$host;
+		proxy_set_header	Upgrade	$http_upgrade;
+		proxy_set_header	Connection	$connection_upgrade;
+		#
+		proxy_read_timeout	86400;
+	}
+	#
+	access_log off;
+	error_log  /var/log/nginx/claude.${NGINX_HOST}.error.log error;
+}
