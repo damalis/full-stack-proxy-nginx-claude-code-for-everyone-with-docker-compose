@@ -10,16 +10,21 @@ If You want to install Claude Code at short time;
 [![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat&logo=ollama&logoColor=white)](https://ollama.com/)
 [![Docker](https://img.shields.io/badge/docker-257bd6?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white&style=flat)](https://nginx.org/)
-[![Shell](https://img.shields.io/badge/Shell-4EAA25?&style=plastic&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Shell](https://img.shields.io/badge/Shell-4EAA25?&style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Let's Encrypt](https://img.shields.io/badge/letsencrypt-003A70?style=flat&logo=letsencrypt&logoColor=white)](https://letsencrypt.org/)
 
 Plus, manage docker containers with Portainer.
 
 #### Supported CPU architectures:
-![Linux-arm64/aarch64](https://img.shields.io/badge/Linux-arm64/aarch64-lightgrey), ![Linux-x86-64](https://img.shields.io/badge/Linux-X86--64-lightgrey)
+![Linux-arm64/aarch64](https://img.shields.io/badge/Linux-arm64/aarch64-lightgrey)
+![Linux-x86-64](https://img.shields.io/badge/Linux-X86--64-lightgrey)
 
 #### Supported Linux Package Manage Systems:
-![apk](https://img.shields.io/badge/apk-0D597F), ![dnf-yum](https://img.shields.io/badge/dnf-yum-73BA25), ![apt/apt-get](https://img.shields.io/badge/apt-apt--get-E95420), ![zypper](https://img.shields.io/badge/zypper-73BA25), ![pacman](https://img.shields.io/badge/pacman-1793D1)
+![apk](https://img.shields.io/badge/apk-0D597F)
+![dnf-yum](https://img.shields.io/badge/dnf-yum-73BA25)
+![apt/apt-get](https://img.shields.io/badge/apt-apt--get-E95420)
+![zypper](https://img.shields.io/badge/zypper-73BA25)
+![pacman](https://img.shields.io/badge/pacman-1793D1)
  
 #### Supported Linux Operation Systems:
 [![Alpine Linux](https://img.shields.io/badge/alpine_linux-0D597F?style=flat&logo=alpine-linux&logoColor=white)](https://alpinelinux.org/)
