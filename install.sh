@@ -435,7 +435,7 @@ then
 	cd ..
 	echo "Ok."
 else
-	ssl_snippet="certbot certonly --webroot --webroot-path \/tmp\/acme-challenge --rsa-key-size 4096 --non-interactive --agree-tos --no-eff-email --force-renewal --email \$\{LETSENCRYPT_EMAIL\} -d \$\{DOMAIN_NAME\} -d www.\$\{DOMAIN_NAME\} -d claude.\$\{DOMAIN_NAME\}"
+	ssl_snippet="certbot certonly --webroot --webroot-path \/tmp\/acme-challenge --rsa-key-size 4096 --non-interactive --agree-tos --no-eff-email --force-renewal --email \$\{LETSENCRYPT_EMAIL\} -d claude.\$\{DOMAIN_NAME\}"
 fi
 
 # set parameters in env.example file
@@ -517,7 +517,6 @@ if [ -x "$(command -v docker)" ] && [ "$(docker compose version)" ]; then
 			echo
 			echo "completed setup"
 			echo
-			echo "Website: https://$domain_name"
 			echo "Claude Code: https://claude.$domain_name"
 			echo "Portainer: https://$domain_name:9001"
 			echo
