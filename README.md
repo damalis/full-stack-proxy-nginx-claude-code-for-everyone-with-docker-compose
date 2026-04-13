@@ -16,10 +16,10 @@ If You want to install Claude Code at short time;
 Plus, manage docker containers with Portainer.
 
 #### Supported CPU architectures:
-<p align="left"> arm64/aarch64, x86-64 </p>
+![Linux-arm64/aarch64](https://img.shields.io/badge/Linux-arm64/aarch64-lightgrey), ![Linux-x86-64](https://img.shields.io/badge/Linux-X86--64-lightgrey)
 
 #### Supported Linux Package Manage Systems:
-<p align="left"> apk, dnf, yum, apt/apt-get, zypper, pacman </p>
+![apk](https://img.shields.io/badge/apk-0D597F), ![dnf-yum](https://img.shields.io/badge/dnf-yum-73BA25), ![apt/apt-get](https://img.shields.io/badge/apt-apt--get-E95420), ![zypper](https://img.shields.io/badge/zypper-73BA25), ![pacman](https://img.shields.io/badge/pacman-1793D1)
  
 #### Supported Linux Operation Systems:
 [![Alpine Linux](https://img.shields.io/badge/alpine_linux-0D597F?style=flat&logo=alpine-linux&logoColor=white)](https://alpinelinux.org/)
