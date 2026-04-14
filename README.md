@@ -3,8 +3,8 @@
 If You want to install Claude Code at short time;
 
 <mark>"Use free on web Claude Code with Ollama and CloudCLI UI"</mark>\
-<mark>"free on mobile and web with CloudCLI (aka Claude Code UI)"</mark>
-<mark>"Install on either a local or a remote server."</mark>
+<mark>"free on mobile and web with CloudCLI (aka Claude Code UI)"</mark>\
+<mark>"Install on either a localhost or a remote server."</mark>
 
 #### Full stack Proxy Nginx Claude Code:
 [![Claude Code](https://img.shields.io/badge/Claude_Code-555?logo=claude)](https://claude.com/product/claude-code)
