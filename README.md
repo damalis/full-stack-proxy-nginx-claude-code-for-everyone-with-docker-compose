@@ -4,12 +4,13 @@ If You want to install Claude Code at short time;
 
 <mark>"Use free on web Claude Code with Ollama and CloudCLI UI"</mark>\
 <mark>"free on mobile and web with CloudCLI (aka Claude Code UI)"</mark>
+<mark>"Install on either a local or a remote server."</mark>
 
 #### Full stack Proxy Nginx Claude Code:
 [![Claude Code](https://img.shields.io/badge/Claude_Code-555?logo=claude)](https://claude.com/product/claude-code)
 [![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat&logo=ollama&logoColor=white)](https://ollama.com/)
 [![Docker](https://img.shields.io/badge/docker-257bd6?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
-[![nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white&style=flat)](https://nginx.org/)
+[![nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white&style=flat)](https://nginx.com/)
 [![Shell](https://img.shields.io/badge/Shell-4EAA25?&style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Let's Encrypt](https://img.shields.io/badge/letsencrypt-003A70?style=flat&logo=letsencrypt&logoColor=white)](https://letsencrypt.org/)
 
