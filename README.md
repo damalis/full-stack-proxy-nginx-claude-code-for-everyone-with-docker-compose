@@ -189,7 +189,7 @@ then reloading for proxy ssl configuration
 docker container restart proxy
 ```
 
-The containers are now built and running. You should be able to access the claude code installation with the configured IP in the browser address. `https://WEBUI_SUBDOMAIN.DOMAIN_NAME`.
+The containers are now built and running. You should be able to access the claude code installation with the configured IP in the browser address. `https://claude.DOMAIN_NAME`.
 
 For convenience you may add a new entry into your hosts file.
 
