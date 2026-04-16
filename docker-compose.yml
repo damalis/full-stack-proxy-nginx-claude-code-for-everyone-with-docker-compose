@@ -115,7 +115,7 @@ services:
             test: ["CMD-SHELL", "ollama", "--version || exit 1"]
             interval: 10s
             timeout: 5s
-            retries: 100
+            retries: 150
         environment:
             OLLAMA_NUM_PARALLEL: 4
             OLLAMA_MAX_LOADED_MODELS: 3
