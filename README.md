@@ -4,7 +4,7 @@ If You want to install Claude Code at short time;
 
 <mark>"Use free on web Claude Code with Ollama and CloudCLI UI"</mark>\
 <mark>"free on mobile and web with CloudCLI (aka Claude Code UI)"</mark>\
-<mark>"Install on either a localhost or a remote server."</mark>
+<mark>"Install on either a localhost or a remote server"</mark>
 
 #### Full stack Proxy Nginx Claude Code:
 [![Claude Code](https://img.shields.io/badge/Claude_Code-555?logo=claude)](https://claude.com/product/claude-code)
@@ -155,7 +155,7 @@ Edit the `.env` file to change values of
   </tr>
   <tr>
     <td>remotehost</td>
-    <td><code>certbot certonly --webroot --webroot-path /tmp/acme-challenge --rsa-key-size 4096 --non-interactive --agree-tos --no-eff-email --force-renewal --email ${LETSENCRYPT_EMAIL} -d ${DOMAIN_NAME} -d www.${DOMAIN_NAME} -d mail.${DOMAIN_NAME} -d ${N8N_SUBDOMAIN}.${DOMAIN_NAME} -d ${WEBUI_SUBDOMAIN}.${DOMAIN_NAME} -d ${WHATSAPP_SUBDOMAIN}.${DOMAIN_NAME}</code></td>
+    <td><code>certbot certonly --webroot --webroot-path /tmp/acme-challenge --rsa-key-size 4096 --non-interactive --agree-tos --no-eff-email --force-renewal --email ${LETSENCRYPT_EMAIL} -d claude.${DOMAIN_NAME}</code></td>
   </tr>
   <tr>
     <td rowspan="2"><code>ANTHROPIC_API_KEY</code></td>
