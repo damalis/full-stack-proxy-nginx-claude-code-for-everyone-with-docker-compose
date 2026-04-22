@@ -499,10 +499,10 @@ if [ -x "$(command -v docker)" ] && [ "$(docker compose version)" ]; then
 			exit 1
 		else
 			echo
-			until [ -n "$(sudo find ./certbot/live -name '$domain_name' 2>/dev/null | head -1)" ]; do
-				echo "waiting Let's Encrypt certificates for $domain_name"
+			until [ -n "$(sudo find ./certbot/live -name 'claude.$domain_name' 2>/dev/null | head -1)" ]; do
+				echo "waiting Let's Encrypt certificates for claude.$domain_name"
 				sleep 5s & wait ${!}
-				if sudo [ -d "./certbot/live/$domain_name" ]; then break; fi
+				if sudo [ -d "./certbot/live/claude.$domain_name" ]; then break; fi
 			done
 			echo "Ok."
 			#until [ ! -z `docker compose ps -a --filter "status=running" --services | grep proxy` ]; do
