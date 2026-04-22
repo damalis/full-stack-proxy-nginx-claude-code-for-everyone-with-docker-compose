@@ -230,11 +230,11 @@ docker compose down -v # Add --volumes to remove volumes explicitly
 ```
 
 ```
-docker rm -f $(docker ps -a -q)	# Removes portainer and the other containers
+docker rm -f $(docker ps -a -q) # Removes portainer and the other containers
 ```
 
 ```
-docker volume rm $(docker volume ls -q)	# Removes all volumes
+docker volume rm $(docker volume ls -q) # Removes all volumes
 ```
 
 ```
