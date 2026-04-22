@@ -201,7 +201,7 @@ docker compose -f portainer-docker-compose.yml -p portainer up -d
 
 manage docker with [Portainer](https://www.portainer.io/) is the definitive container management tool for Docker, Docker Swarm with it's highly intuitive GUI and API. 
 
-You can also visit `https://DOMAIN_NAME:9001` to access portainer after starting the containers.
+You can also visit `https://claude.DOMAIN_NAME:9001` to access portainer after starting the containers.
 
 ### Usage
 
