@@ -11,9 +11,9 @@ echo "==========================================================================
 sleep 2
 
 echo
-# ----------------------- OS Information -------------------------------------
+# ----------------------- OS Information -----------------------------------------
 echo "[+] OS Information"
-echo "-----------------------------------------------------------------------"
+echo "---------------------------------------------------------------------------"
 
 if [[ -f /etc/os-release ]]; then
 	. /etc/os-release
@@ -518,7 +518,7 @@ if [ -x "$(command -v docker)" ] && [ "$(docker compose version)" ]; then
 			echo "completed setup"
 			echo
 			echo "Claude Code: https://claude.$domain_name"
-			echo "Portainer: https://$domain_name:9001"
+			echo "Portainer: https://claude.$domain_name:9001"
 			echo
 			echo "Ok."
 		fi
