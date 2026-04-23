@@ -431,7 +431,7 @@ then
 	sudo rm -Rf mkcert && git clone https://github.com/FiloSottile/mkcert &&
 	cd ./mkcert
 	sudo go build -ldflags "-X main.Version=$(git describe --tags)"
-	./mkcert -uninstall && ./mkcert -install && ./mkcert -key-file privkey.pem -cert-file chain.pem $domain_name *.$domain_name && sudo cat privkey.pem chain.pem > fullchain.pem && sudo mkdir -p ../certbot/live/$domain_name && sudo mv *.pem ../certbot/live/$domain_name
+	./mkcert -uninstall && ./mkcert -install && ./mkcert -key-file privkey.pem -cert-file chain.pem $domain_name *.$domain_name && sudo cat privkey.pem chain.pem > fullchain.pem && sudo mkdir -p ../certbot/live/claude.$domain_name && sudo mv *.pem ../certbot/live/claude.$domain_name
 	cd ..
 	echo "Ok."
 else
