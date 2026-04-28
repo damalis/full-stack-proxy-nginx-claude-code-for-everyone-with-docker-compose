@@ -10,7 +10,7 @@ If You want to install Claude Code at short time;
 [![Claude Code](https://img.shields.io/badge/Claude_Code-555?logo=claude)](https://claude.com/product/claude-code)
 [![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat&logo=ollama&logoColor=white)](https://ollama.com/)
 [![Docker](https://img.shields.io/badge/docker-257bd6?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
-[![nginx](https://img.shields.io/badge/Nginx-009639?logo=nginx&logoColor=white&style=flat)](https://nginx.com/)
+[![NGINX Proxy](https://img.shields.io/badge/NGINX-Reverse%20Proxy-009639?logo=nginx&logoColor=white)](https://nginx.com/)
 [![Shell](https://img.shields.io/badge/Shell-4EAA25?&style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
 [![Let's Encrypt](https://img.shields.io/badge/letsencrypt-003A70?style=flat&logo=letsencrypt&logoColor=white)](https://letsencrypt.org/)
 
