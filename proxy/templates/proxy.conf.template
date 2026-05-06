@@ -1,5 +1,5 @@
 upstream docker_claude_code  {
-        server  claude:5173;
+        server  claude:3001;
 }
 
 map $scheme $proxy_x_forwarded_ssl {
@@ -49,7 +49,9 @@ server {
 		proxy_set_header	Upgrade	$http_upgrade;
 		proxy_set_header	Connection	$connection_upgrade;
 		#
-		proxy_read_timeout	86400;
+		proxy_read_timeout	86400s;
+		proxy_send_timeout	86400s;
+		proxy_connect_timeout	300s;
 	}
 	#
 	access_log off;

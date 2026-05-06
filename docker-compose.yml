@@ -17,7 +17,7 @@ services:
         hostname: claude
         restart: unless-stopped
         ports:
-            - '5173:5173'
+            - '3001:3001'
         healthcheck:
             test: ["CMD-SHELL", "$$HOME/.local/bin/claude --version || exit 1"]
             interval: 10s
@@ -33,7 +33,7 @@ services:
             TZ: '${LOCAL_TIMEZONE}'
         command: bash -c "echo export PATH=\"$$HOME/.local/bin:$$PATH\" >> ~/.bashrc && source ~/.bashrc && curl -fsSL https://claude.ai/install.sh | bash && 
             cd /home/node && if [ -f \"/home/node/.gitignore\" ] || [ -z \"$$(ls -A /home/node)\" ]; then rm -f .gitignore && git clone https://github.com/siteboon/claudecodeui.git . && cp .env.example .env && 
-            echo -e \"WORKSPACES_ROOT=/workspace\\nPORT=3000\" >> .env; else git config --global --add safe.directory /home/node && git pull origin main; fi; npm install && npm run dev"
+            echo -e \"WORKSPACES_ROOT=/workspace\\nVITE_IS_PLATFORM=false\\nENABLE_HTTPS=true\" >> .env; else git config --global --add safe.directory /home/node && git pull origin main; fi; npm install && npm run start"
 
     certbot:
         depends_on:
@@ -48,11 +48,6 @@ services:
             - 'certbot-var:/var/lib/letsencrypt'
             - '/tmp/acme-challenge:/tmp/acme-challenge'
         restart: unless-stopped
-        healthcheck:
-            test: ["CMD-SHELL", "test -d ${LETSENCRYPT_CONF_PREFIX}/live/claude.${DOMAIN_NAME} || exit 1"]
-            interval: 5s
-            timeout: 5s
-            retries: 20
         environment:
             TZ: '${LOCAL_TIMEZONE}'
         entrypoint: /bin/sh -c "${SSL_SNIPPET}; trap exit TERM; while :; do certbot renew --dry-run; sleep 12h & wait $${!}; done;"
