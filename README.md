@@ -11,8 +11,11 @@ If You want to install Claude Code at short time;
 [![Ollama](https://img.shields.io/badge/-Ollama-000000?style=flat&logo=ollama&logoColor=white)](https://ollama.com/)
 [![Docker](https://img.shields.io/badge/docker-257bd6?style=flat&logo=docker&logoColor=white)](https://www.docker.com/)
 [![NGINX Proxy](https://img.shields.io/badge/NGINX-Reverse%20Proxy-009639?logo=nginx&logoColor=white)](https://nginx.com/)
-[![Shell](https://img.shields.io/badge/Shell-4EAA25?&style=flat&logo=gnu-bash&logoColor=white)](https://www.gnu.org/software/bash/)
+[![Certbot](https://img.shields.io/badge/Certbot-003A70?style=flat&logo=letsencrypt&logoColor=white)](https://certbot.eff.org/)
 [![Let's Encrypt](https://img.shields.io/badge/letsencrypt-003A70?style=flat&logo=letsencrypt&logoColor=white)](https://letsencrypt.org/)
+[![Portainer](https://img.shields.io/badge/Portainer-13BEF9?style=flat&logo=portainer&logoColor=white)](https://www.portainer.io/?hsLang=en)
+[![Docker Compose](https://img.shields.io/badge/Docker%20Compose-2496ED?style=flat&logo=docker&logoColor=white)](https://docs.docker.com/compose/)
+[![Bash](https://img.shields.io/badge/Bash-4EAA25?style=flat&logo=gnubash&logoColor=white)](https://www.gnu.org/software/bash/)
 
 Plus, manage docker containers with Portainer.
 
