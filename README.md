@@ -42,6 +42,7 @@ Plus, manage docker containers with Portainer.
 [![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-red?logo=raspberrypi)](https://www.raspberrypi.com/)
 
 ##### Note: Fedora 37, 39 and alpine linux x86-64 compatible, could not try sles IBM Z s390x, rhel IBM Z s390x and raspberrypi.
+##### After installing the repository, a system reboot is required on Red Hat OS, Arch Linux.
 
 ##### System Requirements
 
